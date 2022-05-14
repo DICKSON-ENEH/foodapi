@@ -2,7 +2,7 @@ require("dotenv").config()
 const express = require("express")
 const cors = require("cors")
 
-const port = 2500
+const port = process.env.PORT ||   2500
 const mongoose = require("mongoose")
 
 mongoose.connect("mongodb+srv://foodapp:today@cluster0.xd5wm.mongodb.net/foodapp?").then(()=>{ 
