@@ -88,7 +88,7 @@ const signin = async(req, res)=>{
           const check = await bcrypt.compare(password, finduser.password)
 
           if(check){
-          const token = jwt.sign({
+          const token = jwt.sign({ 
               _id:finduser._id,
               email:finduser.email,
              position: finduser.position,

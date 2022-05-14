@@ -5,7 +5,7 @@ const {creating, getting, patching, removing, signin} = require("../controller/a
 
 
 router.post("/admin", creating)
-router.post("/adminsignin", signin)
+router.post("/user/signin", signin)
 router.get("/admin", getting)
 router.patch("/admin/:id", patching)
 router.delete("/admin/:id", removing)
